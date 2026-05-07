@@ -31,10 +31,10 @@ $sql = "INSERT INTO tsyn (nom, prenom, date, email, password) VALUES (?, ?, ?, ?
 $stmt = $conn->prepare($sql)
 $stmt->bind_param(
     "sssss",
-    $nom
-    $prenom
-    $date
-    $email
+    $nom,
+    $prenom,
+    $date,
+    $email,
     $password
 );
 
