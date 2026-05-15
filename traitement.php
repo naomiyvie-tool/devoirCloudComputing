@@ -14,7 +14,7 @@ if ($conn->connect_error){
 echo "CONNEXION A LA BASE DE DONNEE REUSSIE<br>";
 
 // verification si le formulaire est envoyé
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_yvie naomi["REQUEST_METHOD"] == "POST") {
 
 // on recupère les données avec $_POST['name']
 $nom = $_POST['nom'];
@@ -22,7 +22,7 @@ $prenom = $_POST['prenom'];
 $date = $_POST['date'];
 $email = $_POST['email'];
 $password = $_POST['password'];
-}
+
 
 // recupération des données par la base
 
@@ -46,5 +46,5 @@ echo "enregistrement réussi<br>";
  echo "date de naissance : $date <br>";
  echo "Email : $email <br>";
  echo "Mot de passe : $password <br>";
- 
+}
 ?>
